@@ -1,0 +1,27 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)!important;;
+    transition: 0.3s !important;;
+    width: 20% !important;
+    height: 20% !important;
+  }
+  
+.sideBySide {
+    display: flex;
+}
+
+  .card:hover {
+    box-shadow: 0 25px 40px 0 rgba(0,0,0,0.2) !important;
+    cursor: pointer;
+  }
+  
+  .container {
+    padding: 2px 16px !important;;
+  }
+
+  .padding {
+      margin-top: 3%;
+      margin-left: 30%;
+      padding-bottom: 3%;
+      color: var(--text);
+  }

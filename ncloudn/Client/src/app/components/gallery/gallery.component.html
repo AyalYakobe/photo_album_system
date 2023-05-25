@@ -1,0 +1,25 @@
+<h1 class="padding">Gallery</h1>
+<div class="general-padding">
+    <form>
+      <h5>Enter Private Mode Password</h5>
+      <input type="password" placeholder="Enter private mode password" #privateModePassword>
+      <button (click)="privateModeCheck(privateModePassword.value)">{{onPrivateMode ? "Make Public Mode" : "Make Private Mode"}}</button>
+      <button (click)="faveriotModeCheck()">{{onFaveriotsMode ? "Show All" : "Show ONLY Faveriots"}}</button>
+    </form>
+    <br>
+    <input placeholder="Search by category" #category><button (click)="searchByCategories(category.value)">Search</button>
+    <br>
+    <br>
+  </div>
+
+<div class="sideBySide">
+    <div *ngFor="let photo of album" class="card">
+        <img [src]="photo.imagePath" [alt]="photo.title" (click)="goToEditPhoto(photo.id)"/>
+        <div class="container">
+        </div>
+    </div>
+</div>
+
+<app-hamburger-menu></app-hamburger-menu>
+<app-profile-icon></app-profile-icon>
+<app-lock-icon></app-lock-icon>

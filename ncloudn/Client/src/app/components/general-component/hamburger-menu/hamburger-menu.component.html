@@ -1,0 +1,19 @@
+<div class="general-padding">
+    <div id="menu-bar">
+    <div id="menu" (click)="onClickMenu()" [ngClass]="menuChange()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+    <ul class="nav" id="nav" (click)="onClickMenu()" [ngClass]="menuChange()">
+        <div *ngFor = "let menuItem of hamburgerArray">
+            <li > <a class="menu-color" (click)="onClickMenuItem(menuItem)">{{menuItem}}</a></li>
+        </div>
+    </ul>
+   </div>
+    <div class="menu-bg" id="menu-bg" (click)="onClickMenu()" [ngClass]="menuChange()"></div>
+</div>
+
+
+
+

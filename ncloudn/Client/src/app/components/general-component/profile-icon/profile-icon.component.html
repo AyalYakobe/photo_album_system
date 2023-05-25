@@ -1,0 +1,15 @@
+<div class="dropup">
+    <i class="fa fa-user " id="userIcon"></i>
+    <div class="dropup-content">
+        <ul class="nav" id="nav" (click)="onClickMenu()" [ngClass]="menuChange()">
+            <div *ngFor = "let menuItem of profileMenu">
+                <li > <a class="menu-color" (click)="onClickMenuItem(menuItem)">{{menuItem}}</a></li>
+            </div>
+            <div *ngFor = "let menuItem of profileMenuDisabled">
+                <li > <a class="menu-color" class="disabled">{{menuItem}}</a></li>
+            </div>
+        </ul>
+    </div>
+  </div>
+
+<div class="menu-bg" id="menu-bg" (click)="onClickMenu()" [ngClass]="menuChange()"></div>

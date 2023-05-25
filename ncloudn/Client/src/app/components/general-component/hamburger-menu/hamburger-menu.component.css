@@ -1,0 +1,86 @@
+.general-padding {
+    padding-bottom: 10%;
+}
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #b81568;
+    display: block;
+    border-radius: 5px;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav li a{
+    color: black;
+    text-decoration: none;
+}
+.nav li a:hover {
+    font-weight: bold;
+}
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.change .bar {
+    background-color: yellow;
+}
+.change #bar1 {
+    transform: translateY(4px);
+}
+.change#bar2 {
+    opacity: 0;
+}
+.change #bar3 {
+    transform: translateY(-6px)
+}
+.change {
+    display: block
+}
+
+.menu-bg, #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg {
+    z-index: 1;
+    margin: 30px 0 20px 20px;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, yellow, yellow) !important;
+    transition: 0.3s, ease;
+}
+#menu-bar {
+    z-index: 2;
+}
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+
+.menu-color {
+    color: var(--text) !important;
+}

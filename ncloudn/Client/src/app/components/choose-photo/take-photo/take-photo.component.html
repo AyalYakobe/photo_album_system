@@ -1,0 +1,20 @@
+<app-choose-photo></app-choose-photo>
+
+<div class="general-padding">
+  <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+
+<br>
+<button id="snapButton" class="actionBtn" (click)="triggerSnapshot();">Take A Snapshot</button>
+<br>
+
+<div class="snapshot" *ngIf="webcamImage">
+  <h2>Presenting...</h2>
+  <img [src]="webcamImage.imageAsDataUrl"/>
+</div>
+
+<input [(ngModel)] = "photoName">
+
+<button class="actionBtn" (click)="saveSnapshot();">Save</button>
+<br>
+<button class="actionBtn" (click)="discardSnapShot();">Discard</button>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <img [src] = "photo.imagePath"/>
+</div>
+
+<div class="container">
+    <input type="text" [(ngModel)]="photo.title"><br>
+    <input type=text  [(ngModel)]="photo.category" placeholder="Category"><br>
+    <button [(ngModel)]="photo.isPrivate" (click)="privateOrPublic()">{{isPrivate ? "Make Public (Currently Private)" : "Make Private (Currently Public)"}}</button><br>
+    <button [(ngModel)]="photo.faveriot" (click)="addToFaveriots()">{{isFave ? "Make Normal (Currently A Faveriot)" : "Make Faveriot (Currently Normal)"}}</button><br>
+    <button (click)="onSubmit()">Update</button>
+</div>
+
+<app-maps (UbicationEmiterEvent)="getUbicationEvent($event)"></app-maps>

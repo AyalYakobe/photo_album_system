@@ -1,0 +1,21 @@
+ <div class="general-padding">
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <button (click)="goToTakePhoto()" class="nav-link active" data-toggle="tab">Take Photo</button>
+    </li>
+    <li class="nav-item">
+      <button (click)="goToLocalPhoto()" class="nav-link" data-toggle="tab">Choose From Local Library</button>
+    </li>
+    <li class="nav-item">
+      <button (click)="goBackToWelcome()" class="nav-link" data-toggle="tab">Back</button>
+    </li>
+    <li class="nav-item">
+      <button (click)="goToGallery()" class="nav-link" data-toggle="tab">Gallery</button>
+    </li>
+  </ul>
+ </div>
+
+
+  <app-hamburger-menu></app-hamburger-menu>
+  <app-profile-icon></app-profile-icon>
+  <app-lock-icon></app-lock-icon>

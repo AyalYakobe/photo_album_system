@@ -1,0 +1,9 @@
+.general-padding {
+    margin-left: 100px !important;
+}
+.welcome {
+    background: var(--bg-nav);
+}
+#welcome-banner {
+    color: var(--text);
+}

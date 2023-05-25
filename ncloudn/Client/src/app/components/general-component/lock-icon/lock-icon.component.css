@@ -1,0 +1,9 @@
+#lockIcon {
+    font-size:50px;
+    margin-left: 1000px;
+    color: var(--text);
+}
+
+.hidden {
+    visibility: hidden;
+}
